@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Cairo-Regular';
+    src: url('../fonts/Cairo-Regular-1.ttf');
+}
+
+body {
+    font-family: 'Cairo-Regular' !important;
+}
+
+option{
+    font-family: 'Cairo' !important;
+}
+
+.input-group label {
+    width: 100%;
+    display: block;
+}
+
+.user-panel .image img {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+.table-bordered th {
+    background: #f1f1f1;
+}
+
+h1.card-title {
+    font-size: 20px;
+}
+
+.profilee-img img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px auto;
+    object-fit: cover;
+}
+
+.card nav {
+    display: block;
+    margin: 0 auto;
+}
+
+.print-header {
+    display: none;
+}
+
+.print-footer {
+    display: none;
+}
+
+.table-print tfoot {
+    display: none;
+}
+
+.print-title {
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.barcode div{
+    margin: 0 auto !important;
+}
+
+.dt-buttons{
+    float: right;
+}
+
+.navbar-expand .navbar-nav .dropdown-menu{
+    left: 0;
+}
+
+.form-control{
+    margin-bottom: 10px;
+}
+
+@media print {
+    .print-header {
+        display: block;
+
+    }
+
+    .table-print {
+        margin-top: 50px;
+    }
+
+    .print-footer {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .print-row {
+        border: 0 !important;
+    }
+
+    .table-bordered .print-row td {
+        border: 0 !important;
+    }
+
+    .table-bordered th {
+        background: #f3f3f3 !important;
+    }
+
+    .table-bordered td,
+    .table-bordered th {
+        border: 1px solid #000 !important;
+        font-weight: bold;
+    }
+
+    .table-print {
+        border: 0 !important;
+    }
+
+    .print-title {
+        font-size: 22px;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hide-column {
+        display: none;
+    }
+
+    .table-print tfoot {
+        display: contents;
+    }
+    
+    html{
+        border: 3px solid #000 !important;
+        padding: 15px;
+    }
+
+}

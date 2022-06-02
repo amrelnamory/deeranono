@@ -1,0 +1,10 @@
+<?php
+
+return [
+ 
+
+    'settings' => [],
+    'categories' => [],
+ 
+   
+];

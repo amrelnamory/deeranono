@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Cairo-Regular';
+    src: url('../fonts/Cairo-Regular-1.ttf');
+}
+
+
+* {
+    direction: rtl !important;
+
+}
+
+body {
+    font-family: 'Cairo-Regular' !important;
+}
+
+option {
+    font-family: 'Cairo' !important;
+}
+
+.layout-fixed .main-sidebar {
+    right: 0;
+}
+
+.sidebar-collapse .main-sidebar,
+.sidebar-collapse .main-sidebar::before {
+    margin-right: -250px;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar,
+.sidebar-mini.sidebar-collapse .main-sidebar::before {
+    margin-right: 0;
+    width: 4.6rem;
+}
+
+.main-sidebar,
+.main-sidebar::before {
+    transition: margin-right .3s ease-in-out, width .3s ease-in-out;
+    transition-property: margin-right, width;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+}
+
+.content-wrapper,
+.main-footer,
+.main-header {
+    margin-left: 0px;
+    margin-right: 250px;
+}
+
+.mr-auto-navbav {
+    margin-right: auto !important;
+}
+
+.login-box,
+.register-box {
+    margin: 18.5% auto;
+}
+ 
+
+.ekko-lightbox-nav-overlay a:first-child span {
+    position: absolute;
+    right: -10%;
+}
+
+.ekko-lightbox-nav-overlay a:last-child span {
+    position: absolute;
+    left: -10%;
+}
+
+@media (max-width: 767.98px) {
+
+    .main-sidebar,
+    .main-sidebar::before {
+        box-shadow: none !important;
+        margin-right: -250px;
+    }
+
+    .sidebar-open .main-sidebar,
+    .sidebar-open .main-sidebar::before {
+        margin-right: 0;
+    }
+
+    .content-wrapper,
+    .main-footer,
+    .main-header {
+        margin-left: 0px;
+        margin-right: 0;
+    }
+
+    .sidebar-mini.sidebar-collapse .main-sidebar,
+    .sidebar-mini.sidebar-collapse .main-sidebar::before {
+        width: 0;
+    }
+
+    .form-control {
+        margin-bottom: 10px;
+    }
+}
+
+
+.brand-image {
+    float: right;
+}
+
+
+.mr-auto-navbav {
+    margin-right: auto !important;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+[class*=icheck-]>input:first-child:checked+input[type=hidden]+label::after,
+[class*=icheck-]>input:first-child:checked+label::after {
+    right: 15px;
+    left: auto;
+}
+
+.nav-sidebar .nav-link>.right,
+.nav-sidebar .nav-link>p>.right {
+    left: 1rem;
+    right: auto;
+}
+
+.nav-sidebar .nav-link>.right:nth-child(2),
+.nav-sidebar .nav-link>p>.right:nth-child(2) {
+    left: 2.2rem;
+    right: auto;
+}
+
+.small-box .icon>i {
+    left: 15px;
+    right: auto;
+}
+
+.card-title {
+    float: right;
+}
+
+#expenses-chart *,
+#expenses-type *,
+#sales-chart *,
+#incomes-chart * {
+    direction: ltr !important;
+}
+
+@media (min-width: 992px) {
+
+    .sidebar-mini.sidebar-collapse .content-wrapper,
+    .sidebar-mini.sidebar-collapse .main-footer,
+    .sidebar-mini.sidebar-collapse .main-header {
+        margin-right: 4.6rem !important;
+    }
+
+    .sidebar-mini.sidebar-collapse .content-wrapper,
+    .sidebar-mini.sidebar-collapse .main-footer,
+    .sidebar-mini.sidebar-collapse .main-header {
+        margin-right: 4.6rem !important;
+        margin-left: 0 !important;
+    }
+}
+ 
+.custom-file-label::after {
+    right: auto;
+    content: "اختر";
+    border-left: 0;
+    border-radius: 0 .25rem .25rem 0;
+}
+
+
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__arrow {
+    left: 3px;
+    right: inherit;
+}
